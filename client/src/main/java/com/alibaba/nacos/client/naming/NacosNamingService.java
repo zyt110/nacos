@@ -113,7 +113,7 @@ public class NacosNamingService implements NamingService {
         registerInstance(serviceName, ip, port, Constants.DEFAULT_CLUSTER_NAME);
     }
     
-    @Override
+    @Override //2.x版本注册源码入口
     public void registerInstance(String serviceName, String groupName, String ip, int port) throws NacosException {
         registerInstance(serviceName, groupName, ip, port, Constants.DEFAULT_CLUSTER_NAME);
     }
